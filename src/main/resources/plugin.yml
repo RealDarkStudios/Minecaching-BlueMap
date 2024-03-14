@@ -1,0 +1,17 @@
+name: MinecachingBlueMap
+version: '${project.version}'
+main: net.realdarkstudios.minecachingbm.MinecachingBlueMap
+api-version: '1.19'
+prefix: Minecaching BM
+depend: [Minecaching, BlueMap]
+authors: [RealDarkStudios / RDS]
+description: BlueMap integration for Minecaching
+commands:
+  mbmreload:
+    description: "Reloads the Minecaching BM Markers"
+    usage: "/mbmreload"
+    permission: minecachingbm.reload
+    permission-message: "You do not have permission to reload the MBM Markers"
+permissions:
+  minecachingbm.reload:
+    default: op
